@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside>
+        <img id="menu" src="images/menu.svg">
+        <nav>
+            <ul>
+                <li><a href="#our_poster">Our Poster</a></li>
+                <li><a href="#introduction_link">Introduction</a></li>
+                <li><a href="#objective_link">Objectives</a></li>
+                <li><a href="#methods_link">Methods</a></li>
+                <li><a href="#results_link">Results</a></li>
+                <li><a href="#conclusion_link">Conclusion</a></li>
+                <li><a href="#references_link">References</a></li>
+                <li><a href="#Acknowledgements_link">Acknowledgements</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="introduction_page">
+            <img id="Baruch_background_image" src="https://3k7by215ywuf340yi3alsfso-wpengine.netdna-ssl.com/wp-content/uploads/sites/5/2019/01/Zicklin_Baruch_Campus1-645x325.jpg">  
+        </div>
+        <div id="landing_page">
+            <h1 class="typewriter" id="Title">
+                How COVID-19 has Affected Baruch Students
+            </h1> 
+            <p class="our_names" id="study_by">
+                A study by: 
+            </p>
+            <ul class="our_names" id="list_of_names">
+                <li>Agnes Chen •</li>
+                <li>Ashley Chen •</li>
+                <li>Leah Loperena •</li>
+                <li>Afroza Nishi •</li>
+                <li>Michael Orman •</li>
+                <li>Jessica Yeroshalami •</li>
+                <li>Allison Yi </li>
+            </ul>
+            <h1 id="our_poster_title">
+                <a id="our_poster">Our Poster</a>   
+            </h1>
+            <img id="our_poster_image" src="images/poster.svg"/>
+        </div>
+        <div class="Subsection" id="Introduction">
+            <h2 class="Subheading" id="introduction">
+                <a id="introduction_link">Introduction</a>
+            </h2>
+            <ul class="listed_info" id="introduction_list">
+                <li>Due to the COVID-19 pandemic, our lives have drastically changed. The pandemic has caused our educational environment to transition to remote, unemployment rates to rise, and a decline in our physical and mental health.<sup>1</sup></li>
+                <li>Studies have shown that these stressors are causing symptoms of anxiety, depression, and loneliness.<sup>2</sup> </li>
+                <li>Studies have shown an increase in social media consumption among young people and the decline in mental health during this pandemic.<sup>3</sup></li>
+            </ul>
+        </div>
+        <div class="Subsection" id="Objective">
+            <h2 class="Subheading" id="objective">
+                <a id="objective_link">Objectives</a>
+            </h2>
+            <ul class="listed_info" id="objectives_list">
+                <li>To capture the experiences of Baruch students and their mental health/state. </li>
+                <li>Present our findings to Baruch faculty/administrators so that they can better serve the needs of their students. </li>
+            </ul>
+        </div>
+        <div class="Subsection" id="Methods">
+            <h2 class="Subheading" id="methods">
+                <a id="methods_link">Methods</a>
+            </h2>
+            <ul class="listed_info" id="methods_list">
+                <li>Administered a 12 question online survey to Baruch students that was available for a week.</li>
+                <li><a class="bold">Breakdown of Participants:</a> </li>
+            </ul>  
+        </div>
+        <div class="graph" id="survey_results">
+            <img onclick="enlargeSurveyResults()" src="images/surveyresults.png" alt="Chart with survey respondent year of college breakdown" width="187" height="100"/>
+            <button onclick="resetSurveyResults()">Reset</button>
+        </div>
+        <figcaption class="caption" id="surveycap">Chart based on 73 responses</figcaption>
+        <div>
+            <ul class="listed_info" id="methods_list">
+                <li>Conducted a chi square test to determine the correlation between mental health of students and the global health crisis. </li>
+            </ul>
+        </div>
+        <div class="Subsection" id="Results">
+            <h2 class="Subheading" id="results">
+                <a id="results_link">Results</a>
+            </h2>
+            <p class="hypothesis">
+                <span class="bold">Null Hypothesis: </span><span>The mental health of Baruch students is not affected by the pandemic.</span>
+            </p>
+            <p class="hypothesis">
+                <span class="bold">Alternate Hypothesis: </span><span>The mental health of Baruch students is affected by the pandemic.</span>
+            </p>
+            <figcaption class="caption" id="generaltitlecap">General Mental Health Survey</figcaption>
+            <div class="graph" id="generalgraph">
+                <img  onclick="enlargeGeneralGraph()"  src="images/generalmentalhealth.svg" alt="Chart with survey respondent year of college breakdown" width="187" height="100"/>
+                <button onclick="resetGeneralGraph()">Reset</button> 
+            </div>
+            <figcaption class="caption" id="generalexplain">A chi-square test of independence showed that there was a significant association between mental health before and after the pandemic, X2 (24, N = 73) = 57.70, p < .001. Students have significantly different mental health.</figcaption>
+            <figcaption class="caption" id="depressiontitlecap">Depression Related Survey</figcaption>
+            <div class="graph" id="twoweeksone">
+                <img  onclick="enlargeTwoWeeksOne()"  src="images/twoweeksone.svg" alt="Chart with survey respondent year of college breakdown" width="187" height="100"/>
+                <button onclick="resetTwoWeeksOne()">Reset</button> 
+            </div>
+            <figcaption class="caption" id="twoweekscap1">There was a significant association between feeling little interest or pleasure in doing things before and after the pandemic, X2 (16, N = 73) = 53.96, p < .001.</figcaption>
+            <figcaption class="caption" id=twoweekscap2>There was a significant association between feeling down, depressed, or hopeless before and after the pandemic, X2 (16, N = 73) = 31.86, p = .01.</figcaption>
+            <figcaption class="caption" id="anxietytitlecap">Anxiety Related Survey</figcaption>
+            <div class="graph" id="twoweekstwo">
+                <img onclick="enlargeTwoWeeksTwo()" src="images/twoweekstwo.svg" alt="Chart with survey respondent year of college breakdown" width="187" height="100"/>
+                <button onclick="resetTwoWeeksTwo()">Reset</button>
+            </div>
+            <figcaption class="caption" id="twoweekscap1">There was a significant association between feeling nervous, anxious, or on edge before and after the pandemic, X2 (16, N = 73) = 29.39, p < .05.</figcaption>
+            <figcaption class="caption" id="twoweekscap2">There was no significant association between being unable to stop or control worrying before and after the pandemic, X2 (16, N = 73) = 17.89, p = .33.</figcaption>
+        </div>
+        <div class="document" class="Subsection" id="Conclusion">
+            <h2 class="Subheading" id="conclusion">
+                <a id="conclusion_link">Conclusion</a>
+            </h2>
+            <ul class="listed_info" id="conclusion_list">
+                <li>Our results support our hypothesis that COVID-19 has a negative impact on the mental health of Baruch students</li>
+                <li class="bold">Most students (60.3%) report being in only fair (38.4%) or poor (21.9%) mental health during the pandemic</li>
+                <li>In these categories  most students reported negative mental health all, most, or several days of the week:</li>
+                <ul>
+                    <li class="bold">Little interest or pleasure doing things (75.3%), Feeling down, depressed or hopeless (67.1%), and Feeling nervous anxious or on edge (87.7%).</li>
+                </ul>
+                <li>There is no evidence that the pandemic causes an inability to control or stop worrying</li>
+                <li>Lack of information on Baruch students’ mental health pre-pandemic; it was unattainable information. </li>
+                <li>Future work should address specific methods on how to improve students’ mental health. </li>
+            </ul>
+        </div>
+        <div class="Subsection" id="References">
+            <h2 class="Subheading" id="references">
+                <a id="references_link">References</a>
+            </h2>
+            <ol class="listed_info" id="references_list">
+                <li>Beck, Francois, et al. "Covid‐19 health crisis and lockdown associated with high level of sleep complaints and hypnotic uptake at the population level." <span class="publisher">Journal of Sleep Research</span> (2020): e13119.</li>
+                <li>Ellis, Wendy E., Tara M. Dumas, and Lindsey M. Forbes. "Physically isolated but socially connected: Psychological adjustment and stress among adolescents during the initial COVID-19 crisis." <span class="publisher">Canadian Journal of Behavioural Science/Revue canadienne des sciences du comportement</span> 52.3 (2020): 177.</li>
+                <li>Gao, Junling et al. “Mental health problems and social media exposure during COVID-19 outbreak.” PloS one vol. 15,4 e0231924. 16 Apr. 2020, doi:10.1371/journal.pone.0231924</li>
+                <li>Nathiya, Deepak, et al. “Mental Health Problems and Impact on Youth Minds During the COVID-19 Outbreak: Cross-Sectional (RED-COVID) Survey.” <span class="publisher">Social Health and Behavior</span>, vol. 3, no. 3, Wolters Kluwer India Pvt. Ltd, July 2020, pp. 83–88, doi:10.4103/SHB.SHB_32_20.</li>
+            </ol>
+        </div>
+        <div class="Subsection" id="Acknowldgements">
+            <h2 class="Subheading" id="acknowledgements">
+                <a id="Acknowledgements_link">Acknowledgements</a>
+            </h2>
+            <p id="ack">
+                We want to thank everyone who participated in our survey and a special thank you to Professor Calamari for supporting our study.
+            </p>
+        </div>
+    </main>
+    <script>   
+        (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('#menu');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active'),
+                    document.body.classList.toggle('lock-scroll');
+                    e.preventDefault();                
+                });
+            })();
+    </script>
+    <script>
+        surveyResults = document.getElementById("survey_results")
+        function enlargeSurveyResults() {
+            surveyResults.style.transform = "scale(2)";
+            surveyResults.style.transition = "transform 0.25s ease"
+        }
+        function resetSurveyResults() { 
+            surveyResults.style.transform = "scale(1)"; 
+            surveyResults.style.transition = "transform 0.25s ease"; 
+        } 
+
+        generalGraph = document.getElementById("generalgraph")
+        function enlargeGeneralGraph() {
+            generalGraph.style.transform = "scale(2)";
+            generalGraph.style.transition = "transform 0.25s ease"
+        }
+        function resetGeneralGraph() { 
+            generalGraph.style.transform = "scale(1)"; 
+            generalGraph.style.transition = "transform 0.25s ease"; 
+        } 
+
+        twoWeeksOne = document.getElementById("twoweeksone")
+        function enlargeTwoWeeksOne() {
+            twoWeeksOne.style.transform = "scale(2)";
+            twoWeeksOne.style.transition = "transform 0.25s ease"
+        }
+        function resetTwoWeeksOne() { 
+            twoWeeksOne.style.transform = "scale(1)"; 
+            twoWeeksOne.style.transition = "transform 0.25s ease"; 
+        } 
+    
+        img = document.getElementById("twoweekstwo")
+        function enlargeTwoWeeksTwo() {
+            img.style.transform = "scale(2)";
+            img.style.transition = "transform 0.25s ease"
+        }
+        function resetTwoWeeksTwo() { 
+            img.style.transform = "scale(1)"; 
+            img.style.transition = "transform 0.25s ease"; 
+        } 
+    </script>
+</body>
+</html>
